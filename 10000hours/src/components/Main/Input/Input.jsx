@@ -30,7 +30,7 @@ export default function Input({setDomain,setTime}) {
         setTime(timeInp.value)
 
         const loadingImg = document.querySelector('.loading-img')
-        const result = document.querySelector('.answer-section')
+        const result = document.querySelector('.result-section')
         loadingImg.style.display = 'flex'
         result.style.display='none'
 

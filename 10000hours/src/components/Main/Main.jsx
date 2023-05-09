@@ -1,6 +1,6 @@
 import './Main.css'
 import Input from './Input/Input';
-import Answer from './Answer/Answer';
+import Result from './Result/Result';
 import { useState } from 'react';
 
 export default function Main({setModal}) {
@@ -21,7 +21,7 @@ export default function Main({setModal}) {
               setDomain={setDomain} 
               setTime={setTime} />
         <img className='loading-img' src="./img/loading.png" alt="로딩중" />
-        <Answer domain={domain} 
+        <Result domain={domain} 
               time={10000/parseInt(time)}
               setModal={setModal} 
               setDomain={setDomain} 

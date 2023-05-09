@@ -1,25 +1,25 @@
-.answer-section{
+.result-section{
     margin-top: 147px;
     display: none;
 }
 
-.answer-text {
+.result-text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.answer-text strong{
+.result-text strong{
     font-family: 'GmarketSansBold';
     font-size: 72px;
     vertical-align: middle;
 }
 
-.answer-text:first-child{
+.result-text:first-child{
     margin-bottom: 17px;
 }
 
-.answer-strong{
+.result-strong{
     margin: 0 12px;
 }
 
