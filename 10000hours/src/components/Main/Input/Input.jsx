@@ -13,16 +13,16 @@ export default function Input({setDomain,setTime}) {
         timeInp.focus()
       }
     }else{
-      if(Number.isNaN(parseInt(timeInp.value))){
-        alert('시간은 숫자로 입력해주세요')
-        timeInp.value =''
-        timeInp.focus()
-      }else if(parseInt(timeInp.value)>24){
-        alert('24시간이 넘는건 불가능해요')
-        timeInp.value =''
-        timeInp.focus()
-      }else if(parseInt(timeInp.value)>19){
-        alert(`안주무세요?`)
+      if(Number.isNaN(parseInt(timeInp.value)) || parseInt(timeInp.value)>19){
+        if(Number.isNaN(parseInt(timeInp.value))){
+          alert('시간은 숫자로 입력해주세요')
+        }else{
+          if(parseInt(timeInp.value)>24){
+            alert('24시간이 넘는건 불가능해요')
+          }else{
+            alert(`안주무세요?`)
+          }
+        }
         timeInp.value =''
         timeInp.focus()
       }else{
@@ -33,6 +33,7 @@ export default function Input({setDomain,setTime}) {
         const result = document.querySelector('.result-section')
         loadingImg.style.display = 'flex'
         result.style.display='none'
+        document.querySelector('.share-btn').style.display='inline-block'
 
         setTimeout(()=>{
           loadingImg.style.display = 'none'

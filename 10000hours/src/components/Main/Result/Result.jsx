@@ -4,6 +4,14 @@ export default function Result({domain,time,setModal}) {
   const openModal = ()=>{
     setModal(true)
   }
+
+  const shareOver = (e) =>{
+    e.currentTarget.childNodes[0].style.display='none'
+  }
+  const shareLeave = (e)=>{
+    e.currentTarget.childNodes[0].style.display='inline-block'
+  }
+
   return (
     <section className='result-section'>
       <div className='result-text'>
@@ -15,7 +23,9 @@ export default function Result({domain,time,setModal}) {
 
       <div className='btn-wrap'>
         <button onClick={openModal} className='train-btn'>훈련하러 가기 GO!GO!</button>
-        <button className='share-btn'>공유하기</button>
+        <div onMouseOver={shareOver} onMouseLeave={shareLeave}  className='share-box'>
+          <button className='share-btn'>공유하기</button>
+        </div>
       </div>
     </section>
   )

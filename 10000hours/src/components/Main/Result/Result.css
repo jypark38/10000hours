@@ -26,6 +26,8 @@
 
 .btn-wrap{
     margin-top: 127px;
+    display: flex;
+    justify-content: center;
 }
 
 .train-btn{
@@ -33,6 +35,10 @@
     height: 66px;
     background: #FCEE21;
     margin-right: 18px;
+}
+.share-box{
+    width: 191px;
+    height: 66px;
 }
 .share-btn{
     width: 191px;
