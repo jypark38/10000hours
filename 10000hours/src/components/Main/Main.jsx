@@ -17,15 +17,12 @@ export default function Main({setModal}) {
               최소한 1만 시간의 훈련이 필요하다는 법칙이다.
           </h3>
         </div>
-        <Input
-              setDomain={setDomain} 
+        <Input setDomain={setDomain} 
               setTime={setTime} />
         <img className='loading-img' src="./img/loading.png" alt="로딩중" />
         <Result domain={domain} 
               time={10000/parseInt(time)}
-              setModal={setModal} 
-              setDomain={setDomain} 
-              setTime={setTime}/>
+              setModal={setModal}/>
     </main>
   )
 }

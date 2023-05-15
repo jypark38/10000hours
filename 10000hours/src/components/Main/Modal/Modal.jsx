@@ -1,6 +1,7 @@
 import './Modal.css'
 
 export default function Modal({setModal}) {
+  // 이런 기능은 app.js에서 선언해서 넘기는게 나아보인다
   const closeModal = () =>{
     setModal(false)
   }

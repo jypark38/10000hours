@@ -42,6 +42,8 @@ export default function Input({setDomain,setTime}) {
       }
     }
   }
+
+  // input값은 리액트가 제어하게 코딩
   
   return (
     <section className='input-section'>
